@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carigara Public Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Carigara Public Library</h1>
+        <p>Book Reservation and Availability Tracker</p>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to Our Library</h2>
+            <p>Check book availability before visiting the library.</p>
+        </section>
+
+        <section class="catalog">
+            <h2>Book Catalog</h2>
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search by book title or author..."
+            >
+
+            <div class="filters">
+                <button onclick="filterBooks('All')">All</button>
+                <button onclick="filterBooks('Available')">Available</button>
+                <button onclick="filterBooks('Borrowed')">Borrowed</button>
+                <button onclick="filterBooks('Reserved')">Reserved</button>
+            </div>
+
+            <div id="bookList" class="book-list"></div>
+        </section>
+
+        <section class="reservations">
+            <h2>My Reservations</h2>
+            <div id="reservationList">
+                <p>No reservations yet.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Carigara, Leyte Public Library | Student Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

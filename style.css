@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7f4;
+    color: #24352b;
+}
+
+header {
+    background: #205c43;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+section {
+    background: white;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #0000000d;
+}
+
+.welcome {
+    background: #e1f0e6;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd8ce;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px 14px;
+    background: #286849;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #17452f;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.book-card {
+    border: 1px solid #dce5de;
+    border-radius: 9px;
+    padding: 15px;
+}
+
+.book-card h3 {
+    margin-top: 0;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.Available {
+    color: #23804c;
+}
+
+.Borrowed {
+    color: #b77912;
+}
+
+.Reserved {
+    color: #b33c36;
+}
+
+.book-card button {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.book-card button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+.reservation-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    background: #205c43;
+    color: white;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 16px;
+    }
+}
